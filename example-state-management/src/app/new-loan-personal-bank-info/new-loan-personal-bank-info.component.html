@@ -1,0 +1,16 @@
+<form [formGroup]="formGroupBankInfo" class="example-form">
+    <ng-template matStepLabel>Fill out your address</ng-template>
+    <mat-form-field>
+      <input matInput placeholder="Work Address" formControlName="workAddress" required>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Bank Account Number" formControlName="bankAccountNumber" required>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Loan Amount" formControlName="loanAmount" required>
+    </mat-form-field>
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button matStepperNext>Next</button>
+    </div>
+  </form>
