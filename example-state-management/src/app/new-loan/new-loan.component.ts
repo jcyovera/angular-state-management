@@ -14,12 +14,12 @@ export class NewLoanComponent implements OnInit {
   constructor(private _formBuilder: FormBuilder) { }
 
   ngOnInit() {
-    this.firstFormGroup = this._formBuilder.group({
+    /*this.firstFormGroup = this._formBuilder.group({
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
       dni: ['', Validators.required],
       address: ['',]
-    });
+    });*/
     this.secondFormGroup = this._formBuilder.group({
       workAddress: ['', Validators.required],
       bankAccountNumber: ['', Validators.required],

@@ -1,0 +1,19 @@
+<div class="example-form">
+    <ng-template matStepLabel>Fill out your name</ng-template>
+    <mat-form-field>
+      <input matInput placeholder="First name" [(ngModel)]="personalInfo.firstName" required >
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Last name" [(ngModel)]="personalInfo.lastName" required >
+      </mat-form-field>
+
+    <mat-form-field>
+        <input matInput placeholder="Document Id" [(ngModel)]="personalInfo.dni" required >
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Address" [(ngModel)]="personalInfo.address" required >
+    </mat-form-field>
+    <div>
+      <button mat-button matStepperNext (click)="savePersonalInfo()">Next</button>
+    </div>
+  </div>
