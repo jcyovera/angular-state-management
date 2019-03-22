@@ -1,5 +1,8 @@
+import { State } from './../../store/state/app.state';
 import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
+import { Store, select } from '@ngrx/store';
+import { selectPersonalInfo } from 'src/app/store/selectors/personal-info.selectors';
 
 @Component({
   selector: 'new-loan-personal-info',
@@ -9,9 +12,12 @@ import { FormGroup } from '@angular/forms';
 export class NewLoanPersonalInfoComponent implements OnInit {
   @Input() formGroupPersonalInfo:FormGroup;
 
-  constructor() { }
+  constructor(private _store: Store<State>) { }
 
   ngOnInit() {
+    this._store.pipe(select(selectPersonalInfo)).subscribe((data) => {
+       console.log(data);
+    });
   }
 
 }
