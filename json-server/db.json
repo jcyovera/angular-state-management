@@ -9,15 +9,15 @@
     },
     {
       "id": 2,
-      "first_name": "Steve",
-      "last_name": "Palmer",
+      "firstName": "Steve",
+      "lastName": "Palmer",
       "email": "steve@codingthesmartway.com",
 	  "loanAmount" : 40000
     },
     {
       "id": 3,
-      "first_name": "Ann",
-      "last_name": "Smith",
+      "firstName": "Ann",
+      "lastName": "Smith",
       "email": "ann@codingthesmartway.com",
 	  "loanAmount" : 50000
     }
